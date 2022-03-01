@@ -19,8 +19,8 @@ public class Student {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "nationality")
-    private String nationality;
+    @Column(name = "country")
+    private String country;
 
     @Column(name = "programme_of_study")
     private String programmeOfStudy;
@@ -44,7 +44,7 @@ public class Student {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.nationality = country;
+        this.country = country;
         this.programmeOfStudy = programmeOfStudy;
         this.contact = contact;
         this.yearOfAward = yearOfAward;
@@ -83,11 +83,11 @@ public class Student {
     }
 
     public String getCountry() {
-        return nationality;
+        return country;
     }
 
     public void setCountry(String country) {
-        this.nationality = country;
+        this.country = country;
     }
 
     public String getProgrammeOfStudy() {
