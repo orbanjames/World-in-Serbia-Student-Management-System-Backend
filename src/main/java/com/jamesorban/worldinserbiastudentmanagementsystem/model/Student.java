@@ -26,7 +26,7 @@ public class Student {
     private String programmeOfStudy;
 
     @Column(name = "contact")
-    private Integer contact;
+    private String contact;
 
     @Column(name = "year_of_award")
     private Integer yearOfAward;
@@ -39,7 +39,7 @@ public class Student {
                    String email,
                    String country,
                    String programmeOfStudy,
-                   Integer contact,
+                   String contact,
                    Integer yearOfAward) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -98,11 +98,11 @@ public class Student {
         this.programmeOfStudy = programmeOfStudy;
     }
 
-    public Integer getContact() {
+    public String getContact() {
         return contact;
     }
 
-    public void setContact(Integer contact) {
+    public void setContact(String contact) {
         this.contact = contact;
     }
 
